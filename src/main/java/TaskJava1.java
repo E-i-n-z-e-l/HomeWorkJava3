@@ -11,8 +11,7 @@ import java.util.Iterator;
 public class TaskJava1 {
     public static void main(String[] args) {
         String[] arraysStringAndInteger = {"Яблоко", "11", "13", "Апельсин", "Дыня", "17"};
-        ArrayList<String> stringAndInteger = new ArrayList<>();
-        stringAndInteger.addAll(Arrays.asList(arraysStringAndInteger));
+        ArrayList<String> stringAndInteger = new ArrayList<>(Arrays.asList(arraysStringAndInteger));
         System.out.println(stringAndInteger);
         for (int i = 0; i < stringAndInteger.size(); i++) {
             if (stringAndInteger.get(i).matches("\\d+")) {
